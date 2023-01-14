@@ -58,14 +58,14 @@
             <!-- Percentage -->
             <div class="mt-8">
                 <p class="inline text-2xl mr-2">Save:</p>
-                <input class="border-2 border-solid border-neutral-300 rounded p-1" type="number" placeholder="Enter Your Amount">
-                <p class="inline">%</p>
+                <input id="save" class="border-2 border-solid border-neutral-300 rounded p-1" type="number" placeholder="Enter Your Amount">
+                <p class="inline mr-5">%</p>
                 <button id="save-btn" class="bg-green-600 text-white py-2 px-4 rounded"">Save</button>
             </div>
             <!-- Final Result -->
             <div class="mt-8">
-                <p class="text-4xl font-semibold">Saving Amount: $<span>0</span></p>
-                <p class="text-4xl font-semibold mt-2">Remaining Balance: $<span>0</span></p>
+                <p class="text-4xl font-semibold">Saving Amount: $<span id="saving-amount">0</span></p>
+                <p class="text-4xl font-semibold mt-2">Remaining Balance: $<span id="remaining-balance">0</span></p>
             </div>
         </div>
     </main>
