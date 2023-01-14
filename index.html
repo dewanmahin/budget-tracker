@@ -4,9 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css"></link>
     <title>Budget Tracker</title>
 </head>
 <body>
-    
+
+<section class="mx-28 my-16">
+    <!-- Header Area -->
+    <header>
+        <h1 class="text-6xl italic text-center font-semibold text-purple-600">Budget Tracker</h1>
+    </header>
+    <!-- Main Area -->
+    <main class="main-area text-center">
+        <!-- Income & Expenses -->
+        <div class="income&expenses mt-12">
+            <!-- Income -->
+            <div class="income">
+                <h1 class="text-4xl font-semibold">Income</h1>
+                <div class="mt-4">
+                    <p class="inline text-2xl mr-2">Income:</p>
+                    <input class="border-2 border-solid border-neutral-300 rounded p-1" type="number" placeholder="Enter Your Salary">
+                </div>
+            </div>
+            <!-- Expenses -->
+            <div class="expenses mt-8">
+                <h1 class="text-4xl font-semibold">Expenses</h1>
+                <div class="mt-4">
+                    <p class="inline text-2xl mr-2">Food:</p>
+                    <input class="border-2 border-solid border-neutral-300 rounded p-1" type="number" placeholder="Enter Your Amount">
+                </div>
+                <div class="mt-4">
+                    <p class="inline text-2xl mr-2">Rent:</p>
+                    <input class="border-2 border-solid border-neutral-300 rounded p-1" type="number" placeholder="Enter Your Amount">
+                </div>
+                <div class="mt-4">
+                    <p class="inline text-2xl mr-2">Cloths:</p>
+                    <input class="border-2 border-solid border-neutral-300 rounded p-1" type="number" placeholder="Enter Your Amount">
+                </div>
+            </div>
+            <!-- Calculate Button -->
+            <div class="mt-6">
+                <button class="bg-violet-600 text-white py-2 px-4 rounded">Calculate</button>
+            </div>
+            <!-- Result -->
+            <div class="mt-8">
+                <p class="text-4xl font-semibold">Total Expenses: $<span>0</span></p>
+                <p class="text-4xl font-semibold mt-2">Balance: $<span>0</span></p>
+            </div>
+        </div>
+        <!-- Savings -->
+        <div class="savings">
+            <!-- Percentage -->
+            <div class="mt-8">
+                <p class="inline text-2xl mr-2">Save:</p>
+                <input class="border-2 border-solid border-neutral-300 rounded p-1" type="number" placeholder="Enter Your Amount">
+                <p class="inline">%</p>
+                <button class="bg-green-600 text-white py-2 px-4 rounded"">Save</button>
+            </div>
+            <!-- Final Result -->
+            <div class="mt-8">
+                <p class="text-4xl font-semibold">Saving Amount: $<span>0</span></p>
+                <p class="text-4xl font-semibold mt-2">Remaining Balance: $<span>0</span></p>
+            </div>
+        </div>
+    </main>
+</section>
+
 </body>
 </html>
