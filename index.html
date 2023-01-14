@@ -24,7 +24,7 @@
                 <h1 class="text-4xl font-semibold">Income</h1>
                 <div class="mt-4">
                     <p class="inline text-2xl mr-2">Income:</p>
-                    <input class="border-2 border-solid border-neutral-300 rounded p-1" type="number" placeholder="Enter Your Salary">
+                    <input id="income" class="border-2 border-solid border-neutral-300 rounded p-1" type="number" placeholder="Enter Your Salary">
                 </div>
             </div>
             <!-- Expenses -->
@@ -32,25 +32,25 @@
                 <h1 class="text-4xl font-semibold">Expenses</h1>
                 <div class="mt-4">
                     <p class="inline text-2xl mr-2">Food:</p>
-                    <input class="border-2 border-solid border-neutral-300 rounded p-1" type="number" placeholder="Enter Your Amount">
+                    <input id="food-expenses" class="border-2 border-solid border-neutral-300 rounded p-1" type="number" placeholder="Enter Your Amount">
                 </div>
                 <div class="mt-4">
                     <p class="inline text-2xl mr-2">Rent:</p>
-                    <input class="border-2 border-solid border-neutral-300 rounded p-1" type="number" placeholder="Enter Your Amount">
+                    <input id="rent-expenses" class="border-2 border-solid border-neutral-300 rounded p-1" type="number" placeholder="Enter Your Amount">
                 </div>
                 <div class="mt-4">
                     <p class="inline text-2xl mr-2">Cloths:</p>
-                    <input class="border-2 border-solid border-neutral-300 rounded p-1" type="number" placeholder="Enter Your Amount">
+                    <input id="cloths-expenses" class="border-2 border-solid border-neutral-300 rounded p-1" type="number" placeholder="Enter Your Amount">
                 </div>
             </div>
             <!-- Calculate Button -->
             <div class="mt-6">
-                <button class="bg-violet-600 text-white py-2 px-4 rounded">Calculate</button>
+                <button id="calculate-btn" class="bg-violet-600 text-white py-2 px-4 rounded">Calculate</button>
             </div>
             <!-- Result -->
             <div class="mt-8">
-                <p class="text-4xl font-semibold">Total Expenses: $<span>0</span></p>
-                <p class="text-4xl font-semibold mt-2">Balance: $<span>0</span></p>
+                <p class="text-4xl font-semibold">Total Expenses: $<span id="total-expenses">0</span></p>
+                <p class="text-4xl font-semibold mt-2">Balance: $<span id="balance">0</span></p>
             </div>
         </div>
         <!-- Savings -->
@@ -60,7 +60,7 @@
                 <p class="inline text-2xl mr-2">Save:</p>
                 <input class="border-2 border-solid border-neutral-300 rounded p-1" type="number" placeholder="Enter Your Amount">
                 <p class="inline">%</p>
-                <button class="bg-green-600 text-white py-2 px-4 rounded"">Save</button>
+                <button id="save-btn" class="bg-green-600 text-white py-2 px-4 rounded"">Save</button>
             </div>
             <!-- Final Result -->
             <div class="mt-8">
@@ -71,5 +71,6 @@
     </main>
 </section>
 
+<script src="app.js"></script>
 </body>
 </html>
